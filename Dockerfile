@@ -10,7 +10,6 @@ RUN node -v
 
 COPY ajjenda-mobile-html5-parvindra.tar.gz .
 RUN tar -zxf ajjenda-mobile-html5-parvindra.tar.gz
-DEL ajjenda-mobile-html5-parvindra.tar.gz
 
 # Expose the ports we're interested in
 EXPOSE 8100 8100
