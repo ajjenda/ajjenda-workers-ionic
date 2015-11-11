@@ -17,4 +17,5 @@ EXPOSE 35729 35729
 
 # Set the default command to run on boot
 # This will boot IONIC in the standalone mode and bind to all interface
+WORKDIR Ajjenda
 CMD ["ionic", "serve", "-c", "-s", "--address", "0.0.0.0"]
