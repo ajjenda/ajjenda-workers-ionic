@@ -1,0 +1,5 @@
+ionic-workers:
+   image: ajjenda/ionic-workers:${COPYARTIFACT_BUILD_NUMBER_AJJENDA_MOBILE_HTML_PARVINDRA}
+   expose:
+    - "8100"
+    - "35729"
