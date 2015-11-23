@@ -14,3 +14,5 @@ workers:
   tty: true
   image: rancher/load-balancer-service
   stdin_open: true
+  links:
+  - ionic-workers:ionic-workers  
