@@ -1,12 +1,12 @@
 FROM ajjenda/ionic
 MAINTAINER Yoseph Reuveni <yoseph.reuveni@gmail.com>
  
-RUN phonegap -v
-RUN cordova -v
-RUN ionic -v
-RUN n -V
-RUN bower -v
-RUN node -v
+RUN phonegap -v && \
+    cordova -v && \
+    ionic -v  && \
+    n -V  && \
+    bower -v  && \
+    node -v  && \
 
 COPY ajjenda-mobile-html5-parvindra.tar.gz .
 RUN tar -zxf ajjenda-mobile-html5-parvindra.tar.gz
