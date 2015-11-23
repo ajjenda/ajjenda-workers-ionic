@@ -3,3 +3,6 @@ ionic-workers:
    expose:
     - "8100"
     - "35729"
+  restart: always
+  tty: true
+  stdin_open: true
