@@ -6,3 +6,11 @@ ionic-workers:
    restart: always
    tty: true
    stdin_open: true
+workers:
+  ports:
+  - 35729:35729/tcp
+  - 8100:8100
+  restart: always
+  tty: true
+  image: rancher/load-balancer-service
+  stdin_open: true
