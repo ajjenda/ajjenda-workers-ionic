@@ -8,7 +8,7 @@ RUN phonegap -v && \
     bower -v  && \
     node -v  && \
 
-COPY *.tar.gz .
+COPY ajjenda-mobile-workers.tar.gz .
 RUN tar -zxf *.tar.gz && rm *.tar.gz && mv Ajjenda AjjendaWorkers
 
 # Expose the ports we're interested in
